@@ -1,9 +1,9 @@
 #include "main.h"
 
 unsigned int convert_sbase(buffer_t *output, long int num, char *base,
-unsigned char flags, int wid, int prec);
+		unsigned char flags, int wid, int prec);
 unsigned int convert_ubase(buffer_t *output,
-unsigned long int num, char *base,
+		unsigned long int num, char *base,
 unsigned char flags, int wid, int prec);
 
 /**
@@ -64,7 +64,7 @@ return (ret);
  * Return: The number of bytes stored to the buffer.
  */
 unsigned int convert_ubase(buffer_t *output, unsigned long int num, char *base,
-unsigned char flags, int wid, int prec)
+		unsigned char flags, int wid, int prec)
 {
 unsigned int size, ret = 1;
 char digit, pad = '0', *lead = "0x";
